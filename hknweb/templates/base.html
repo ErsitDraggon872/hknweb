@@ -164,9 +164,11 @@
             {% endif %}
             <a href="{% url 'candidate:candidate_portal' %}">Candidate Portal</a>
             <span class="slash">/</span>
+            <a href="{% url 'about' %}">Member Profile</a>
+            <span class="slash">/</span>
             <a href="/accounts/settings">Settings</a>
             <span class="slash">/</span>
-            <a href="/accounts/logout?next={{request.path}}">Log out</a>
+            <a href="/accounts/logout?next={{request.path}}">Log Out</a>
         </div>
     {% endif %}
 
